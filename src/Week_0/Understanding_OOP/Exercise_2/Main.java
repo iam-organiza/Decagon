@@ -1,4 +1,4 @@
-package Week_0.Exercise_2;
+package Week_0.Understanding_OOP.Exercise_2;
 
 import java.util.List;
 
