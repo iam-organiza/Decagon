@@ -1,7 +1,5 @@
 package Week_0.Understanding_OOP.Exercise_1;
 
-import Week_0.Understanding_OOP.Exercise_1.Holiday;
-
 import java.util.List;
 
 public class Main {
