@@ -18,6 +18,15 @@ public class MatLibs {
         Scanner scanner = new Scanner(System.in);
         String season = scanner.next();
 
+        // Personal twerk to restrict the type of seasons that are allowed :).
+        // (Optional code starts here)
+        ArrayList<String> seasons = new ArrayList<>(List.of("spring", "summer", "fall", "winter"));
+        while(!seasons.contains(season.toLowerCase(Locale.ROOT))) {
+            System.out.println("Wrong input format use one of this: " + seasons);
+            season = scanner.next();
+        }
+        // (Optional code ends here)
+
         // 2. Get a whole number
         System.out.println("Minimum of coffees you take during " + season + " ? ");
         int wholeNumber = scanner.nextInt();
