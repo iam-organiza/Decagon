@@ -27,6 +27,7 @@ public class MatLibs {
         String adjective = scanner.next();
         scanner.close();
 
+        // 4. Output the template string: "On a [adjective] [season of the year] day, I drink a minimum of [whole number] cups of coffee"
         System.out.println("On a " + adjective + " " + season + " day, I drink a minimum of " + wholeNumber + " cups of coffee");
     }
 
