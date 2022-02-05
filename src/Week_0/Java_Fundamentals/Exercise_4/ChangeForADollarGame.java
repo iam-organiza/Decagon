@@ -18,7 +18,7 @@ public class ChangeForADollarGame {
         // 1. Get user values for [pennies, nickels, dimes, quarters]
         Scanner scanner = new Scanner(System.in);
         boolean startOver;
-        do {
+        do { // Optional feature which starts the game over based on user response [yes or no]
 
             System.out.println("Welcome to change for a dollar game.");
             System.out.println("The rules are simple you need to provide the exact quatity of coins for the following:");
