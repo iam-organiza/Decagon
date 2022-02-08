@@ -1,5 +1,8 @@
 package Week_0.Java_Fundamentals.Exercise_4;
 
+import java.util.Random;
+import java.util.random.RandomGenerator;
+
 /**
  * Write the following statement and execute
  *
@@ -22,8 +25,10 @@ public class DividingByZero {
             // e.printStackTrace();
             System.out.println("Error! you can not divide by zero ("+e.getMessage()+")");
         } finally {
-
             System.out.println("Division is fun");
         }
+
+        Random random = new Random();
+        System.out.println(random.nextInt(10000, 99999));
     }
 }
