@@ -1,5 +1,9 @@
 package Week_0;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Stack;
+
 public class ObjectRelationship {
 
     /**
@@ -43,5 +47,64 @@ public class ObjectRelationship {
      *
      * Generally, these four types of relationships (Inheritance, Composition, Association and Aggregation) are used in OOP.
      */
+
+    public static String substring(String string, int start, int end) {
+        String result = "";
+        for (int i = start; i < end; i++) {
+            result += string.charAt(i);
+        }
+        return result;
+    }
+
+    public static boolean isPalindrome (String string) {
+
+        String palindrome = "";
+        for (int i = string.length() - 1; i >= 0; i--) {
+            palindrome += string.charAt(i);
+        }
+
+        if (string.equals(palindrome)) {
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // System.out.println("Provide an Integer: ");
+        // Integer n = scanner.nextInt();
+
+        // One method
+        // System.out.println(n.toString());
+
+        // Second method
+        // String result = n + "";
+        // System.out.println(result);
+
+        // System.out.println("Provide a string: ");
+        // String string = scanner.next();
+
+        // System.out.println("Provide a start: ");
+        // int start = scanner.nextInt();
+
+        // System.out.println("Provide an end: ");
+        // int end = scanner.nextInt();
+
+
+        // First method
+        // System.out.println("Result: " + string.substring(start, end));
+
+        // Second method
+        // System.out.println("Result: " + substring(string, start, end));
+
+
+        System.out.println("Provide a string(palindrome): ");
+        String string = scanner.next();
+        scanner.close();
+
+        System.out.println(isPalindrome(string));
+
+    }
 
 }
